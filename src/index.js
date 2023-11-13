@@ -42,18 +42,18 @@ const siteContent = { // BU NESNEYİ DEĞİŞTİRMEYİN
 };
 
 const newItems=document.querySelectorAll("header nav a");
-for(let i=0;i<newItems.length;i++){
-  newItems[i].setAttribute("class","italic");
- 
-}
-newItems[0].textContent=siteContent.nav["nav-item-1"];
-newItems[1].textContent=siteContent.nav["nav-item-2"];
-newItems[2].textContent=siteContent.nav["nav-item-3"];
-newItems[3].textContent=siteContent.nav["nav-item-4"];
-newItems[4].textContent=siteContent.nav["nav-item-5"];
-newItems[5].textContent=siteContent.nav["nav-item-6"];
+ for(let i=0;i<newItems.length;i++){
+   newItems[i].setAttribute("class","italic");
+   newItems[i].textContent=Object.values(siteContent.nav)[i];
+ }
+// newItems[0].textContent=siteContent.nav["nav-item-1"];
+// newItems[1].textContent=siteContent.nav["nav-item-2"];
+// newItems[2].textContent=siteContent.nav["nav-item-3"];
+// newItems[3].textContent=siteContent.nav["nav-item-4"];
+// newItems[4].textContent=siteContent.nav["nav-item-5"];
+// newItems[5].textContent=siteContent.nav["nav-item-6"];
 
-//console.log(newItems[3]);
+console.log(newItems);
 
 const logoImg=document.querySelector(".logo").src=siteContent.images["logo-img"];
  
