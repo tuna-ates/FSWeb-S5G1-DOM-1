@@ -57,10 +57,43 @@ newItems[5].textContent=siteContent.nav["nav-item-6"];
 
 const logoImg=document.querySelector(".logo").src=siteContent.images["logo-img"];
  
-const sectionH1=document.querySelector(".cta .cta-text h1").textContent="Bu DOM Mükemmel";
-const sectionButton=document.querySelector(".cta .cta-text button").textContent="Başlayın";
+const sectionH1=document.querySelector(".cta .cta-text h1").textContent=siteContent.cta.h1;
+const sectionButton=document.querySelector(".cta .cta-text button").textContent=siteContent.cta.button;
 const sectionImage=document.getElementById("cta-img").src=siteContent.images["cta-img"];
 
+const contentFeatures=document.querySelectorAll(".main-content .top-content .text-content h4");
+const contentParag=document.querySelectorAll(".main-content .top-content .text-content p");
+
+contentFeatures[0].textContent=siteContent["ana-içerik"]["özellikler-h4"];
+contentParag[0].textContent=siteContent["ana-içerik"]["özellikler-içerik"];
+
+contentFeatures[1].textContent=siteContent["ana-içerik"]["hakkımızda-h4"];
+contentParag[1].textContent=siteContent["ana-içerik"]["hakkımızda-içerik"];
+
+const contentImg=document.getElementById("middle-img").src=siteContent.images["accent-img"];
+
+const bottomContentH4=document.querySelectorAll(".bottom-content .text-content h4");
+const bottomContentParag=document.querySelectorAll(".bottom-content .text-content p");
+
+bottomContentH4[0].textContent=siteContent["ana-içerik"]["servisler-h4"];
+bottomContentParag[0].textContent=siteContent["ana-içerik"]["servisler-içeriği"];
+
+bottomContentH4[1].textContent=siteContent["ana-içerik"]["ürünler-h4"];
+bottomContentParag[1].textContent=siteContent["ana-içerik"]["ürünler-içeriği"];
+
+bottomContentH4[2].textContent=siteContent["ana-içerik"]["vizyon-h4"];
+bottomContentParag[2].textContent=siteContent["ana-içerik"]["vizyon-içeriği"];
+
+
+const contactH4=document.querySelector(".contact h4").textContent=siteContent.iletisim["iletişim-h4"];
+const contactParag=document.querySelectorAll(".contact p");
+contactParag[0].textContent=siteContent.iletisim.adres;
+contactParag[1].textContent=siteContent.iletisim.telefon;
+contactParag[2].textContent=siteContent.iletisim.email;
+
+const footerContent=document.querySelector("footer a");
+footerContent.setAttribute("class","bold");
+footerContent.textContent=siteContent.footer.copyright;
 
 
 
