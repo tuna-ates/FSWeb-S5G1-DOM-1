@@ -6,7 +6,7 @@ module.exports = {
   mode: 'development',
   output: {
     filename: 'index.js',
-    publicPath: '/',
+    // publicPath: '/',
     path: path.resolve(__dirname, 'dist'),
   },
   devtool: 'source-map',

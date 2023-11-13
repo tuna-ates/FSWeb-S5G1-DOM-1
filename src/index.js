@@ -1,3 +1,5 @@
+
+
 const siteContent = { // BU NESNEYİ DEĞİŞTİRMEYİN
   "nav": {
     "nav-item-1": "Servisler",
@@ -39,7 +41,29 @@ const siteContent = { // BU NESNEYİ DEĞİŞTİRMEYİN
   },
 };
 
-console.log('Proje açıldı!')
+const newItems=document.querySelectorAll("header nav a");
+for(let i=0;i<newItems.length;i++){
+  newItems[i].setAttribute("class","italic");
+ 
+}
+newItems[0].textContent=siteContent.nav["nav-item-1"];
+newItems[1].textContent=siteContent.nav["nav-item-2"];
+newItems[2].textContent=siteContent.nav["nav-item-3"];
+newItems[3].textContent=siteContent.nav["nav-item-4"];
+newItems[4].textContent=siteContent.nav["nav-item-5"];
+newItems[5].textContent=siteContent.nav["nav-item-6"];
+
+//console.log(newItems[3]);
+
+const logoImg=document.querySelector(".logo").src=siteContent.images["logo-img"];
+ 
+const sectionH1=document.querySelector(".cta .cta-text h1").textContent="Bu DOM Mükemmel";
+const sectionButton=document.querySelector(".cta .cta-text button").textContent="Başlayın";
+const sectionImage=document.getElementById("cta-img").src=siteContent.images["cta-img"];
+
+
+
+
 
 
 /* Kodlar Buradan aşağıya */
